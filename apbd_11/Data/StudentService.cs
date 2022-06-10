@@ -22,7 +22,7 @@ namespace blazor_24c.Data
                 },
                 new Student
                 {
-                    ID = 1,
+                    ID = 2,
                     FirstName = "Adam",
                     LastName = "Kowalski",
                     Avatar = "Test4",
@@ -31,7 +31,7 @@ namespace blazor_24c.Data
                 },
                 new Student
                 {
-                    ID = 1,
+                    ID = 3,
                     FirstName = "Pitor",
                     LastName = "Piętka",
                     Avatar = "Test5",

@@ -2,12 +2,39 @@
 @inject IStudentService StudentService
 @inject NavigationManager navigator
 
-<h3>StudentDetails</h3>
-<input value="@Student.FirstName" disabled />
-<input value="@Student.LastName" disabled />
-<input value="@Student.Birthdate.ToShortDateString()" disabled />
-<input value="@Student.Studies" disabled />
-<input value="@Student.Avatar" disabled />
+<h3><u>Student's details</u></h3>
+<table>
+    <tr style="height:30px"></tr>
+    <tr>
+        <td><b>First Name:</b></td>
+        <td style="width:20px"></td>
+        <td><input value="@Student.FirstName" disabled /></td>
+        <td style="width:100px"></td>
+        <td><b>Avatar:</b></td>
+        <td style="width:20px"></td>
+        <td><input value="@Student.Avatar" disabled /></td>
+    </tr>
+    <tr style="height:10px"></tr>
+    <tr>
+         <td><b>Last Name:</b></td>
+        <td style="width:20px"></td>
+        <td><input value="@Student.LastName" disabled /></td>
+    </tr>
+    <tr style="height:10px"></tr>
+    <tr>
+         <td><b>Birthdate:</b></td>
+        <td style="width:20px"></td>
+        <td><input value="@Student.Birthdate" disabled /></td>
+    </tr>
+    <tr style="height:10px"></tr>
+    <tr>
+         <td><b>Studies:</b></td>
+        <td style="width:20px"></td>
+        <td><input value="@Student.Studies" disabled /></td>
+    </tr>
+    <tr style="height:20px"></tr>
+</table>
+
 
 <button @onclick="Return">Return</button>
 

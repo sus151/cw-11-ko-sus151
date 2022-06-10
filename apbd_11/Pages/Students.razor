@@ -6,7 +6,7 @@
 
 <h3><u>Studenci</u></h3>
 <table border=1>
-    <tr>
+    <tr style="height:40px">
         <th @onclick="@(() => Sort("Avatar"))">Avatar</th>
         <th @onclick="@(() => Sort("FirstName"))">FirstName</th>
         <th @onclick="@(() => Sort("LastName"))">LastName</th>
@@ -16,13 +16,13 @@
     </tr>
     @foreach(var stud in StudentsList)
     {
-        <tr>
+        <tr style="height:40px">
             <td>@stud.Avatar</td>
             <td>@stud.FirstName</td>
             <td>@stud.LastName</td>
             <td>@stud.Birthdate.ToLongDateString()</td>
             <td>@stud.Studies</td>
-            <td border=0>
+            <td>
                 <button @onclick="(() => Delete(stud.ID))">Delete</button>
                 <button @onclick="(() => ShowDetails(stud.ID))">Details</button>
             </td>
