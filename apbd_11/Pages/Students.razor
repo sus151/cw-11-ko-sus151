@@ -7,22 +7,22 @@
 <h3><u>Studenci</u></h3>
 <table border=1>
     <tr style="height:40px">
-        <th @onclick="@(() => Sort("Avatar"))">Avatar</th>
-        <th @onclick="@(() => Sort("FirstName"))">FirstName</th>
-        <th @onclick="@(() => Sort("LastName"))">LastName</th>
-        <th @onclick="@(() => Sort("Birthdate"))">Birthdate</th>
-        <th @onclick="@(() => Sort("Studies"))">Studies</th>
-        <th>Actions</th>
+        <th style="text-align:center" @onclick="@(() => Sort("Avatar"))">Avatar</th>
+        <th style="text-align:center" @onclick="@(() => Sort("FirstName"))">First Name</th>
+        <th style="text-align:center" @onclick="@(() => Sort("LastName"))">Last Name</th>
+        <th style="text-align:center" @onclick="@(() => Sort("Birthdate"))">Birthdate</th>
+        <th style="text-align:center" @onclick="@(() => Sort("Studies"))">Studies</th>
+        <th style="text-align:center">Actions</th>
     </tr>
     @foreach(var stud in StudentsList)
     {
         <tr style="height:40px">
-            <td>@stud.Avatar</td>
-            <td>@stud.FirstName</td>
-            <td>@stud.LastName</td>
-            <td>@stud.Birthdate.ToLongDateString()</td>
-            <td>@stud.Studies</td>
-            <td>
+            <td style="text-align:center">@stud.Avatar</td>
+            <td style="text-align:center">@stud.FirstName</td>
+            <td style="text-align:center">@stud.LastName</td>
+            <td style="text-align:center">@stud.Birthdate.ToLongDateString()</td>
+            <td style="text-align:center">@stud.Studies</td>
+            <td style="text-align:center">
                 <button @onclick="(() => Delete(stud.ID))">Delete</button>
                 <button @onclick="(() => ShowDetails(stud.ID))">Details</button>
             </td>
